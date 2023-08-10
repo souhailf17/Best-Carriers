@@ -1,0 +1,82 @@
+<style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+  
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 350px;
+    }
+  
+    input,
+    select,
+    button {
+      font-size: 1.2em;
+      padding: 10px;
+      margin: 10px;
+      width: 100%;
+      box-sizing: border-box;
+    }
+  </style>
+  
+  <form action="/" method="post">  
+
+   <!--  <img src="logo2.png" alt="logo" width="100" height="100">  -->
+
+<h1>AutoDistribution Maroc</h1>
+    <label for="ville">ville :</label>
+    <select id="ville" name="ville">
+      <option value="">Sélectionnez une ville</option>
+      <option value="Khouribga">Khouribga</option>
+      <option value="Nador">Nador</option>
+      <option value="Errachidia">Errachidia</option>
+      <option value="Essaouira">Essaouira</option>
+      <option value="Tetouan">Tetouan</option>
+      <option value="Agadir">Agadir</option>
+      <option value="Midelt">Midelt</option>
+      <option value="Ouarzazate">Ouarzazate</option>
+      <option value="Taza">Taza</option>
+      <option value="Meknes">Meknes</option>
+      <option value="Safi">Safi</option>
+      <option value="Taroudant">Taroudant</option>
+      <option value="Al Hoceima">Al Hoceima</option>
+      <option value="Beni Mellal">Beni Mellal</option>
+      <option value="K Tadla">K Tadla</option>
+      <option value="Bouskoura">Bouskoura</option>
+      <option value="Mediouna">Mediouna</option>
+      <option value="Had Soualem">Had Soualem</option>
+      <option value="Settat">Settat</option>
+      <option value="Khenifra">Khenifra</option>
+      <option value="El Jadida">El Jadida</option>
+      <option value="Tiznit">Tiznit</option>
+      <option value="Ait Melloul">Ait Melloul</option>
+      <option value="Oujda">Oujda</option>
+      <option value="Fes">Fes</option>
+    </select>
+  
+    <label for="jour">jour :</label>
+    <select id="jour" name="jour">
+      <option value="">Sélectionnez un jour</option>
+      <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+    </select>
+  
+    <button type="submit">Soumettre</button>
+    
+  {% if transporteur %}
+
+  <p>Le meilleur transporteur pour {{ ville }} le {{ jour }} est {{ transporteur }}</p>
+
+  {% endif %}
+  </form>
+  
