@@ -19,5 +19,3 @@ The result is passed to the HTML template which displays it below the form.
 So in summary, this is a simple utility to quickly find the best carrier for a given city/day in Morocco, based on predefined data in the code.
 
 The application uses Flask for the backend and Jinja to dynamically generate the HTML template.
-
-Let me know if you need any more details on how the code works!
