@@ -75,6 +75,7 @@ for row in rows:
             
 @app.route('/')
 def home():
+
     return render_template('app.html')
 
 def trouver_meilleur(ville, jour):
@@ -101,7 +102,7 @@ def home1():
     
     # Trouver meilleur transporteur    
   transporteur = trouver_meilleur(ville, int(jour))    
-  return render_template('app.html', transporteur=transporteur)
+  return render_template('app.html', transporteur=transporteur, ville=ville)
     
     # traitement des données
     
