@@ -1,0 +1,498 @@
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      /* background: url({{ url_for('static', filename='back23.png') }}) no-repeat center center fixed;  */
+      background-size: cover;
+    }
+    #ville option {
+      color: black;
+    }
+  
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 350px;
+    }
+  
+    input,
+    select,
+    button {
+      font-size: 1.2em;
+      padding: 10px;
+      margin: 10px;
+      width: 100%;
+      box-sizing: border-box;
+    }
+    /* styles.css */
+#ville::-webkit-calendar-picker-indicator {
+  color: black; /* Change text color of datalist options */
+} 
+</style>
+<script nonce="abc2324">
+  fetch('/api/data')
+    .then(response => response.json())
+    .then(data => {
+      // render data
+    })
+  </script>
+  
+  <form action="/" method="post">  
+
+   <!--  <img src="logo2.png" alt="logo" width="100" height="100">  -->
+
+
+    <label for="ville">ville :</label>
+    <input name="ville" list="ville">
+    <datalist id="ville" name="ville" style="color: blue;">
+  <option value="casa siege" style="color: blue;">
+  <option value="casa chimicolor">  
+  <option value="bouskoura">
+  <option value="mediouna">
+  <option value="had soualem">
+  <option value="lakhyayta">
+  <option value="mohammadia">
+  <option value="mohammedia">
+  <option value="ben slimane">
+  <option value="benslimane">
+  <option value="bouznika">
+  <option value="settat">
+  <option value="sattat">
+  <option value="berechid">
+  <option value="berrechid">
+  <option value="berrechide">
+  <option value="barchide">
+  <option value="barchid">
+  <option value="khouribga">
+  <option value="khoribga">
+  <option value="oued zem">
+  <option value="oued zame">
+  <option value="oued zam">
+  <option value="agadir">
+  <option value="amsekroud">
+  <option value="ameskroud">
+  <option value="ameskroude">
+  <option value="drarga">
+  <option value="anza">
+  <option value="aourir">
+  <option value="taghazout">
+  <option value="taghazoute">
+  <option value="tamraghte">
+  <option value="tamraght">
+  <option value="imi ouaddar">
+  <option value="mirleft">
+  <option value="sidi ifni"> 
+  <option value="gelmim">
+  <option value="bouizakarne">
+  <option value="lakhssas">
+  <option value="tiznit">
+  <option value="laayoune">
+  <option value="tantan">
+  <option value="tan tan">
+  <option value="ait melloul">
+  <option value="dchira">
+  <option value="inzgane">
+  <option value="azrou">
+  <option value="temssiya">
+  <option value="ouled dahou">
+  <option value="ain seddaq">
+  <option value="ouled teima">
+  <option value="mechraa el ain">
+  <option value="mechraa elain">
+  <option value="taroudant">
+  <option value="taroudante">   
+  <option value="sebt lherdan">
+  <option value="gfifat">
+  <option value="gfifate">
+  <option value="ait iazza">
+  <option value="sidi bibi">
+  <option value="tin manssour">
+  <option value="had belfaa">
+  <option value="khmiss ait amira">    
+  <option value="biougra">
+  <option value="imi mqorn">
+  <option value="ait baha">
+  <option value="el kolea">
+  <option value="kenitra zi">
+  <option value="kenitra cntre">
+  <option value="mehdia">
+  <option value="sidi yahya el gharb">
+  <option value="sidi yahya al gharb">
+  <option value="sidi yahya algharb">  
+  <option value="sidi yahya elgharb">
+  <option value="sidi slimane">
+  <option value="sidislimane">
+  <option value="sidi kacem"> 
+  <option value="sidikacem">
+  <option value="khnichat">
+  <option value="j el malha">
+  <option value="jorf al malha">
+  <option value="jorf el malha">
+  <option value="sidi allal tazi">
+  <option value="mogren">
+  <option value="souk larbaa">
+  <option value="ouazzane">    
+  <option value="m.ben kssiri">
+  <option value="dar legdari">
+  <option value="beni mellal">
+  <option value="sidi jaber">
+  <option value="had bradya">
+  <option value="fkih ben saleh">
+  <option value="ouled zmam">
+  <option value="ouled mrah">  
+  <option value="souk sebt">
+  <option value="kasbat tadla">
+  <option value="ouled yaich">
+  <option value="foum el ansar">
+  <option value="ait iko">
+  <option value="eghram laalam">  
+  <option value="ksiba">
+  <option value="zaouit cheikh">
+  <option value="oulad mbarek">
+  <option value="afourar">
+  <option value="ben elouidane">
+  <option value="azilal">    
+  <option value="ouzoud">
+  <option value="ait atab">   
+  <option value="oulad ayad">
+  <option value="el jadida">
+  <option value="azemmour">
+  <option value="tnin chtouka"> 
+  <option value="bir jdid">    
+  <option value="souihla">
+  <option value="loudaya">
+  <option value="mzoudia">
+  <option value="chichaoua">    
+  <option value="imintanoute">
+  <option value="tamlalt">
+  <option value="k.sraghna">
+  <option value="kelaa sraghna">
+  <option value="kelaat sraghna">
+  <option value="el attaouia">  
+  <option value="chwiter">
+  <option value="ait ourir">
+  <option value="tahanaout">  
+  <option value="ourika">
+  <option value="sidi rahal">
+  <option value="demnat">
+  <option value="essaouira">
+  <option value="sidi el mokhtar">
+  <option value="ben guerir">  
+  <option value="benguerir">
+  <option value="benguerrir">
+  <option value="sidi bouatman">
+  <option value="skhour rhamna">
+  <option value="skoura">
+  <option value="k.megouna">
+  <option value="kelaat mgouna">  
+  <option value="kelat megouna">
+  <option value="kelat megouna">
+  <option value="boumalen dades">
+  <option value="tinghir">
+  <option value="ouarzazat">
+  <option value="ouarzazate">
+  <option value="bouffakraan">
+  <option value="boufakran">
+  <option value="boufakrane">
+  <option value="el hajeb">
+  <option value="azrou">
+  <option value="mrirt">  
+  <option value="khenifra">
+  <option value="sebaa ayoun">
+  <option value="bouderbala">
+  <option value="timahdit">
+  <option value="boulaajoul">
+  <option value="zaida">
+  <option value="midelt">
+  <option value="tillicht">
+  <option value="rich">
+  <option value="errachidia">
+  <option value="erfoud">  
+  <option value="guelmima">
+  <option value="rissani">
+  <option value="haj kadour">
+  <option value="fes">
+  <option value="fes centre">
+  <option value="aknoul">
+  <option value="kaceta">    
+  <option value="imzouren">
+  <option value="hoceima">
+  <option value="houceima"> 
+  <option value="targuist">
+  <option value="issagen">
+  <option value="ketama">
+  <option value="kettama">
+  <option value="ain chgag">  
+  <option value="imouzer">
+  <option value="immouzer">
+  <option value="ifrane">
+  <option value="douiat">
+  <option value="ain allah">
+  <option value="moulay yaakoub">
+  <option value="my yaakoub">    
+  <option value="my yaacoub">
+  <option value="moulay yaacoub">    
+  <option value="lamhaya">
+  <option value="ain taoujtat">
+  <option value="ras elma">  
+  <option value="ain chkef">
+  <option value="sefrou">
+  <option value="sidi hrazem">
+  <option value="tissa"> 
+  <option value="ain aicha">
+  <option value="ain mediouna">
+  <option value="taounate">    
+  <option value="safi">
+  <option value="chemaia">    
+  <option value="jmaat shaim">
+  <option value="tlat bougedra">  
+  <option value="tlat bouguedra">
+  <option value="youssoufia">
+  <option value="had harara"> 
+  <option value="had hrara">    
+  <option value="sebt gzoula">
+  <option value="larache">
+  <option value="assilah">
+  <option value="el ouamra">
+  <option value="kser lakbir">
+  <option value="arbaoua">  
+  <option value="chewaffaae"> 
+  <option value="dlalha">
+  <option value="mly bousselham">
+  <option value="lalla mimouna">  
+  <option value="lemenassera">    
+  <option value="nador">
+  <option value="beni nssar">
+  <option value="tiztoutine">  
+  <option value="driouch">  
+  <option value="midar">
+  <option value="ben tayeb"> 
+  <option value="dar kebdani">
+  <option value="zghanghan">
+  <option value="selouan">
+  <option value="el araoui">
+  <option value="zaio">
+  <option value="oujda">
+  <option value="benidrar">
+  <option value="ahfir">
+  <option value="saidia">
+  <option value="sidi moussa lemhaya">
+  <option value="naima">
+  <option value="layoun charkiya">
+  <option value="berkane">
+  <option value="madagh">    
+  <option value="aklim">
+  <option value="rabat kamra"> 
+  <option value="rabat">    
+  <option value="rabat oecean">
+  <option value="sale">  
+  <option value="sale el jadida"> 
+  <option value="temara">
+  <option value="ain atik">
+  <option value="skhirate">  
+  <option value="tamesna">
+  <option value="sidi yahya zaer"> 
+  <option value="ain aouda">    
+  <option value="aarjate">
+  <option value="arjate">
+  <option value="sidi allal bahraoui">  
+  <option value="tifelt">    
+  <option value="khemisset">    
+  <option value="khemissat">  
+  <option value="bouknadel">    
+  <option value="taza">
+  <option value="mssoun"> 
+  <option value="tadart">
+  <option value="guercif">
+  <option value="taourirt">  
+  <option value="mkanssa">
+  <option value="had ouled zbair">
+  <option value="oued amlil"> 
+  <option value="tahla">
+  <option value="tanger">
+  <option value="tanger mghougha">    
+  <option value="tanger centre">    
+  <option value="tanger zone franche">
+  <option value="meloussa">
+  <option value="melousa">  
+  <option value="sidi ba kacem">    
+  <option value="haouara">
+  <option value="ain dalia">  
+  <option value="tetouan">    
+  <option value="dar ben korrich">
+  <option value="larbaa beni hassan">
+  <option value="chaoune">
+  <option value="martil">    
+  <option value="madieq">
+  <option value="mdiq">    
+  <option value="medieq">  
+  <option value="fnedaq">
+  
+  
+  
+  <option value="agadir">
+  <option value="ben sergao">
+  <option value="anza">
+  <option value="ait melloul">
+  <option value="inzegane">
+  <option value="ouled teima">
+  <option value="dcheira">
+  <option value="tikiouine">
+  <option value="laayoune">
+  <option value="tiznit">
+  <option value="gelmim">
+  <option value="biougra">  
+  <option value="tantan">
+  <option value="ait baha">
+  <option value="chtouka ait baha">
+  <option value="chtouka ait-baha">    
+  <option value="khemis ait amira">
+  <option value="massa">    
+  <option value="tarfaya">
+  <option value="bouizakarne">  
+  <option value="kleaa">
+  <option value="beni mellal">
+  <option value="khouribga">  
+  <option value="fkih ben saleh">
+  <option value="ben hmad">
+  <option value="khenifra">
+  <option value="kasbat tadla">    
+  <option value="azilal">
+  <option value="zaouiyat cheikh">  
+  <option value="bejaad">  
+  <option value="mrirt">    
+  <option value="sebt nemma">
+  <option value="ouled zidouh">
+  <option value="kssiba"> 
+  <option value="boujniba">    
+  <option value="tlat oulad"> 
+  <option value="tighssaline">  
+  <option value="ouled ayad">
+  <option value="ouaouizerth"> 
+  <option value="ait ishaq">
+  <option value="ouled mrah">
+  <option value="had bradia">    
+  <option value="bir mezoui">
+  <option value="oulad mbarek">    
+  <option value="foum oudi">
+  <option value="casablanca">  
+  <option value="mohammedia">
+  <option value="berrechid">
+  <option value="settat">
+  <option value="bouskoura">
+  <option value="had soualem">    
+  <option value="nouasser">    
+  <option value="nouaceur">
+  <option value="ain sebaa">    
+  <option value="tit mellil">  
+  <option value="lekhyayta">
+  <option value="ben slimane">
+  <option value="ain harrouda">    
+  <option value="el gara">
+  <option value="gara">
+  <option value="el jadida">
+  <option value="azemmour">  
+  <option value="sidi bennour">     
+  <option value="bir jdid"> 
+  <option value="khemiss zemamra">    
+  <option value="oualidia">    
+  <option value="sidi smail">  
+  <option value="midelt">
+  <option value="sefrou">
+  <option value="ain taoujtate">
+  <option value="errachidia">
+  <option value="immouzer">
+  <option value="azrou">    
+  <option value="immouzer">    
+  <option value="ifrane">
+  <option value="arfoud">    
+  <option value="rich">    
+  <option value="boumia">
+  <option value="taounate">    
+  <option value="missour">  
+  <option value="kariat ba mhamed"> 
+  <option value="boulmane">  
+  <option value="goulmima">
+  <option value="outat el haj">
+  <option value="rissani">    
+  <option value="tissa">
+  <option value="immouzer">    
+  <option value="zaida">  
+  <option value="sidi kacem">
+  <option value="sidi yahia gharb">
+  <option value="sidi slimane">
+  <option value="mechraa bel ksiri"> 
+  <option value="belksiri">  
+  <option value="jorf el melha">    
+  <option value="souk tlet gharb">  
+  <option value="dar el gueddari">
+  <option value="el mudzine">
+  <option value="ksar el kebir">  
+  <option value="laouamra">  
+  <option value="souk larbaa"> 
+  <option value="moulay bousselham">    
+  <option value="chefchaouen">    
+  <option value="lala mimouna">    
+  <option value="kmiss essahel"> 
+  <option value="aarbaoua">     
+  <option value="had kourt">
+  <option value="ouazzane">    
+  <option value="kelaat sraghna">
+  <option value="tinghir">  
+  <option value="chichaoua"> 
+  <option value="ben guerir">    
+  <option value="ait ourir">
+  <option value="attaouia">    
+  <option value="zagoura">  
+  <option value="kelaat megouna"> 
+  <option value="amzmiz">
+  <option value="tinjdad">
+  <option value="demnate">    
+  <option value="imintanoute">
+  <option value="boufekrane">
+  <option value="tifelt">     
+
+    </datalist>
+  
+    <label for="jour">jour :</label>
+    <select id="jour" name="jour">
+      <option value="">Sélectionnez un jour</option>
+      <option value="0">Lundi</option>
+      <option value="1">Mardi</option>
+      <option value="2">Mercredi</option>
+      <option value="3">Jeudi</option>
+      <option value="4">Vendredi</option>
+      <option value="5">Samedi</option>
+    </select>
+    <button onclick="onClick()">Soumettre</button>
+ 
+    
+{% if transporteurs %}
+
+  <p>Les transporteurs disponibles pour {{ ville }} le jour {{ jour }} sont :</p>
+  <ul>
+  {% for t in transporteurs %}
+    <li>{{ t }}</li>
+  {% endfor %}
+  </ul>
+
+{% else %}
+
+  <p>Aucun transporteur disponible pour {{ville}} le {{jour}}</p>
+
+{% endif %}
+  
+  </form>
+
+
+<script>
+  function onClick(){
+    console.log("click")
+  }
+</script>
+
+  
